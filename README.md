@@ -22,3 +22,10 @@ collection. After its calibrated, it continues running in the enery efficient mo
 ### Instructions to use (without using openwhisk)
 
 - Run files `smart.py` and `traffictest.py`in separate terminals
+
+1. `smart.py` handles calls from `traffictest.py` 
+2. `traffictest.py` goes through the junction data, and send data to `smart.py`
+3. `smart.py` calls perf every intervals of 10 
+4. Based on the `perf` latency calculations and graphs generated `smart.py` change sampling rate
+5. Sends sampling rate to `traffictest.py` which changes the way the sampling occurs
+6. Repeats the process until the dataset is completely run through
