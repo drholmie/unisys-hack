@@ -9,3 +9,16 @@ is the confidence level of the hypothesis that the distributions are the same. T
 We use the traffic datasets from citypulse to simulate an IoT environment for traffic. In the completed demo, the first few runs
 of the samping will be done to calibrate it to the right user specified level of trade off between energy and accuracy of data
 collection. After its calibrated, it continues running in the enery efficient mode.
+
+### Prerequisites:
+
+- Openwhisk
+- Perf
+- Ubuntu 18.04
+- Python 3.5+
+- Flask
+- Ansible
+
+### Instructions to use (without using openwhisk)
+
+- Run files `smart.py` and `traffictest.py`in separate terminals
